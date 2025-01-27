@@ -3,13 +3,15 @@
 This document provides the necessary steps to set up and run a development environment using Docker Containers for the React App as part coding1 assignment.
 
 # Requirements
-* Set up a React app using Vite
+1- Set up a React app using Vite
 
 * I will use Vite as the development tool to create a React app. The app will display a simple h1 tag with the text "Codin 1" on the homepage.
-Create a Docker container for the app
+
+2- Create a Docker container for the app
 
 * I will create a Docker container to host the app. The container will have the name giran_zumrut_busra_coding_assignment11.
-Work Directory
+
+3- Work Directory
 
 * All the application files will be hosted in a directory inside the Docker container, named giran_zumrut_busra_coding.
   Expose port 7775 for the application
