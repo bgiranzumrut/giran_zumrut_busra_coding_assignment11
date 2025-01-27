@@ -56,6 +56,13 @@ function App() {
 
 export default App;
 ````
+6- Run the development server to ensure everything is working:
+
+````bash
+npm run dev
+````
+7- Visit http://localhost:5173 in your browser, and you should see the <h1>Codin 1</h1> displayed. 
+
 
 
 
