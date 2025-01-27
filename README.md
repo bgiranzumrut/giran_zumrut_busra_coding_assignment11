@@ -61,7 +61,41 @@ export default App;
 ````bash
 npm run dev
 ````
-7- Visit http://localhost:5173 in your browser, and you should see the <h1>Codin 1</h1> displayed. 
+7- Visit http://localhost:5173 in your browser, and you should see the <h1>Codin 1</h1> 
+
+##  Create a Docker container for the app
+
+1- In the root directory of your project, create a Dockerfile. The Dockerfile is used to build the Docker image for the app.
+
+2- Here’s the content of the Dockerfile with TypeScript support:
+
+````dockerfile
+# Use Node.js 18 (LTS) Alpine as the base image
+FROM node:18-alpine
+
+# Set the working directory in the container
+WORKDIR /giran_zumrut_busra_coding
+
+# Copy package.json and package-lock.json for dependency installation
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application files into the container
+COPY . .
+
+# Expose the port that Vite will run on
+EXPOSE 5173
+
+# Start the Vite development server, making it accessible on localhost:7775
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "7775"]
+````
+
+
+
+
+
 
 
 
