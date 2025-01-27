@@ -24,7 +24,15 @@ This document provides the necessary steps to set up and run a development envir
 ## Set up a React app using Vite
 
 1- Open your terminal and navigate to the directory where you want to create your project.
+
 2- Run the following command to create a new Vite-based React app:
+
+```bash
+npm create vite@latest my-app --template react
+
+
+
+
 
 
 
