@@ -149,12 +149,9 @@ git remote add origin https://github.com/your-username/your-repository-name.git
 git branch -M main
 git push -u origin main
 ````
+6- **Link to the Repository**: After pushing your code, add the link to your GitHub repository here:
 
-
-
-
-
-
+https://github.com/bgiranzumrut/giran_zumrut_busra_coding_assignment11
 
 ## Set up Docker
 
