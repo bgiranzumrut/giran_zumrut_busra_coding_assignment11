@@ -174,16 +174,13 @@ docker build -t giran_zumrut_busra_coding_assignment11 .
 
 ````bash
 docker run -p 7775:7775 --name giran_zumrut_busra_coding_assignment11 giran_zumrut_busra_coding_assignment11
+````
 
 5- Test the Application
 
 * Once the container is running, open your browser and visit http://localhost:7775.
 * You should see the React app displaying <h1>Codin 1</h1>.
 
-# CI/CD Process
-
-## Continuous Integration (CI):
-Set up a CI pipeline using tools like GitHub Actions, Jenkins, or Travis CI to automatically build the Docker image and run tests whenever changes are pushed to your GitHub repository.
 
 
 
