@@ -1,22 +1,22 @@
 
-Assignment 11: Docker File for React App
-This document provides the necessary steps to set up and run a development environment using Docker Containers for the React App as part of your assignment.
+# Assignment 11: Docker File for React App
+This document provides the necessary steps to set up and run a development environment using Docker Containers for the React App as part coding1 assignment.
 
-Requirements
-Set up a React app using Vite
+# Requirements
+* Set up a React app using Vite
 
-You will use Vite as the development tool to create a React app. The app will display a simple <h1> tag with the text "Codin 1" on the homepage.
+* I will use Vite as the development tool to create a React app. The app will display a simple <h1> tag with the text "Codin 1" on the homepage.
 Create a Docker container for the app
 
-You will create a Docker container to host the app. The container will have the name giran_zumrut_busra_coding_assignment11.
+* I will create a Docker container to host the app. The container will have the name giran_zumrut_busra_coding_assignment11.
 Work Directory
 
-All the application files will be hosted in a directory inside the Docker container, named giran_zumrut_busra_coding.
-Expose port 7775 for the application
+* All the application files will be hosted in a directory inside the Docker container, named giran_zumrut_busra_coding.
+  Expose port 7775 for the application
 
-The development server will run on port 7775. You will ensure the container exposes this port so that the React app can be accessed from localhost:7775 on your machine.
+* The development server will run on port 7775. I will ensure the container exposes this port so that the React app can be accessed from localhost:7775 on my machine.
 Dockerfile Breakdown
-Here is the Dockerfile you created:
+* Here is the Dockerfile you created:
 
 dockerfile
 Copy
