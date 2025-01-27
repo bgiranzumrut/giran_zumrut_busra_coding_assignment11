@@ -25,10 +25,41 @@ This document provides the necessary steps to set up and run a development envir
 
 1- Open your terminal and navigate to the directory where you want to create your project.
 
-2- Run the following command to create a new Vite-based React app:
+2- Run the following command to create a new Vite-based React app with TypeScript:
 
 ```bash
 npm create vite@latest my-app --template react
+
+3- After the project is created, navigate to the newly created project folder:
+
+```bash
+cd my-app
+
+4- Install the required dependencies:
+
+````
+npm install
+
+5- Open the src/App.jsx file, and replace the existing content with the following code to display the simple Codin 1 text:
+
+````typescript
+function App() {
+  return (
+    <div>
+      <h1>Codin 1</h1>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
 
 
 
