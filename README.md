@@ -186,10 +186,7 @@ docker stop giran_zumrut_busra_coding_assignment11
 ````bash
 docker start giran_zumrut_busra_coding_assignment11
 ````
-8- If you need to run the container again with the same port mapping (after starting it):
-````bash
-docker run -p 7775:7775 --name giran_zumrut_busra_coding_assignment11 giran_zumrut_busra_coding_assignment11
-````
+
 
 
 
