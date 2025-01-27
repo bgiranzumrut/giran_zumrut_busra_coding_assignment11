@@ -48,7 +48,7 @@ cd my-app
 npm install
 ```
 
-5- Open the src/App.jsx file, and replace the existing content with the following code to display the simple Codin 1 text:
+5- Open the src/App.ts file, and replace the existing content with the following code to display the simple Codin 1 text:
 
 ````typescript
 function App() {
