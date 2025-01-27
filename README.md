@@ -29,16 +29,19 @@ This document provides the necessary steps to set up and run a development envir
 
 ```bash
 npm create vite@latest my-app --template react
+```
 
 3- After the project is created, navigate to the newly created project folder:
 
 ```bash
 cd my-app
+```
 
 4- Install the required dependencies:
 
-````
+```bash
 npm install
+```
 
 5- Open the src/App.jsx file, and replace the existing content with the following code to display the simple Codin 1 text:
 
@@ -52,6 +55,7 @@ function App() {
 }
 
 export default App;
+````
 
 
 
