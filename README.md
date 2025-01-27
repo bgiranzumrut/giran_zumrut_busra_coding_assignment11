@@ -15,8 +15,8 @@ Work Directory
   Expose port 7775 for the application
 
 * The development server will run on port 7775. I will ensure the container exposes this port so that the React app can be accessed from localhost:7775 on my machine.
-Dockerfile Breakdown
-* Here is the Dockerfile you created:
+
+# Dockerfile Breakdown - Here is the Dockerfile you created:
 
 dockerfile
 Copy
