@@ -5,7 +5,7 @@ This document provides the necessary steps to set up and run a development envir
 # Requirements
 * Set up a React app using Vite
 
-* I will use Vite as the development tool to create a React app. The app will display a simple <h1> tag with the text "Codin 1" on the homepage.
+* I will use Vite as the development tool to create a React app. The app will display a simple h1 tag with the text "Codin 1" on the homepage.
 Create a Docker container for the app
 
 * I will create a Docker container to host the app. The container will have the name giran_zumrut_busra_coding_assignment11.
