@@ -19,6 +19,11 @@ This document provides the necessary steps to set up and run a development envir
 
 * The development server will run on port 7775. I will ensure the container exposes this port so that the React app can be accessed from localhost:7775 on my machine.
 
+4- Set up GitHub Repository
+
+5- Build the Docker Image
+
+
 # Steps to Complete
 
 ## Set up a React app using Vite
@@ -91,6 +96,114 @@ EXPOSE 5173
 # Start the Vite development server, making it accessible on localhost:7775
 CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "7775"]
 ````
+3- The Dockerfile remains the same as before, as Vite and Node.js handle TypeScript compilation automatically.
+
+## Work Directory
+
+All the application files will be hosted in a directory inside the Docker container, named giran_zumrut_busra_coding.
+
+1- The WORKDIR directive in the Dockerfile sets the working directory inside the container to /giran_zumrut_busra_coding.
+
+````dockerfile
+WORKDIR /giran_zumrut_busra_coding
+````
+
+2- Any file or folder copied into the container will be placed inside this directory, ensuring the proper organization of files inside the Docker container.
+
+## Set up GitHub Repository
+
+1- Initialize a Git repository: In the root directory of your project
+
+```bash
+git init
+````
+
+2- Create a .gitignore file:
+
+* Create a .gitignore file in the root of your project to avoid committing unnecessary files (such as node_modules). Add the following content to the .gitignore:
+
+````.gitignore
+node_modules/
+.env
+.vscode/
+.idea/
+````
+
+3- Add all the files to the Git repository: 
+
+````bash
+git add .
+````
+
+4- Commit your changes:
+````bash
+git commit -m "Initial commit for React app with Docker setup"
+````
+
+5- Push to GitHub:
+
+* Create a new repository on GitHub
+* Follow the instructions GitHub provides after you create the repository, which should look something like:
+````bash
+git remote add origin https://github.com/your-username/your-repository-name.git
+git branch -M main
+git push -u origin main
+````
+
+
+
+
+
+
+
+## Set up Docker
+
+1- Create the Dockerfile in the root of the project directory.
+
+2- Ensure Docker is installed on your machine.
+
+3- Build the Docker Image  with the name giran_zumrut_busra_coding_assignment11.
+* 
+
+````bash
+docker build -t giran_zumrut_busra_coding_assignment11 .
+````
+
+4- Start the Docker Container, use the following command:
+* This will start the container and map port 7775 on your local machine to port 7775 inside the container.
+
+````bash
+docker run -p 7775:7775 --name giran_zumrut_busra_coding_assignment11 giran_zumrut_busra_coding_assignment11
+
+5- Test the Application
+
+* Once the container is running, open your browser and visit http://localhost:7775.
+* You should see the React app displaying <h1>Codin 1</h1>.
+
+# CI/CD Process
+
+## Continuous Integration (CI):
+Set up a CI pipeline using tools like GitHub Actions, Jenkins, or Travis CI to automatically build the Docker image and run tests whenever changes are pushed to your GitHub repository.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
