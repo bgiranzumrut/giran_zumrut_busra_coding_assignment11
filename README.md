@@ -1,4 +1,3 @@
-The content in your README file looks great overall, but I have some suggestions for improving clarity and fixing minor formatting issues. Here's a revised version with more consistent formatting, clearer instructions, and minor improvements:
 
 Assignment 11: Docker File for React App
 This document provides the necessary steps to set up and run a development environment using Docker Containers for the React App as part of your assignment.
