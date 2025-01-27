@@ -13,7 +13,7 @@ This document provides the necessary steps to set up and run a development envir
 
 3- Work Directory
 
-* All the application files will be hosted in a directory inside the Docker container, named giran_zumrut_busra_coding.
+* All the application files will be hosted in a directory inside the Docker container, named giran_zumrut_busra_site.
   
 * Expose port 7775 for the application
 
@@ -79,7 +79,7 @@ npm run dev
 FROM node:18-alpine
 
 # Set the working directory in the container
-WORKDIR /giran_zumrut_busra_coding
+WORKDIR /giran_zumrut_busra_site
 
 # Copy package.json and package-lock.json for dependency installation
 COPY package*.json ./
